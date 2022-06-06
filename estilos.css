@@ -1,0 +1,33 @@
+ /* selector de tipo */
+h1 {
+    color: purple;
+    text-decoration: underline;
+}
+
+h2  {
+    color: blue;
+}
+
+p {
+    color: azul;
+    font-size: 45px;
+}
+
+/*selector id */ 
+#cabecera1 {
+    color: red;
+}
+
+/* selector de class */
+.parrafos_rojos {
+    color: red !important;
+    font-weight: 600;
+}
+
+/*selector universal (todos los elementos) */
+* {
+    color: green; 
+    font-size: 12px;
+}
+
+
