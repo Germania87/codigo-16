@@ -1,0 +1,57 @@
+.bg-box {
+    height: 400px;
+    width: 400px;
+    background-color: red;
+    position: relative;
+    top: 100px;
+    /* left: 100px; 
+    right: 100px; */
+}
+
+.padre {
+    width: 500px;
+    height: 500px;
+    background-color: aqua;
+    position: relative;
+}
+
+.hijo {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    position: absolute;
+    top: calc(50% - 50px);
+    left: calc(50% - 50 px); 
+} 
+
+.bandera {
+    height: 100vh;
+    border: solid;
+    /* vamos a poner un position relative */ 
+    position: relative;
+}
+
+.green {
+    height: 100vh;
+    background-color: green;
+    width: 40%;
+    float: left;
+}
+
+.red {
+    height: 100vh;
+    background-color: red;
+    width: 60%;
+    float: right;
+}
+
+.escudo {
+    background: url("../imagen/portugal\ escudo.svg.png");
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: calc(50% - 100px);
+    left: calc(40% - 100px);
+}
+

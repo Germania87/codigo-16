@@ -1,0 +1,37 @@
+body {
+    font-family: Verdana;
+}
+
+header {
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    z-index: 1;
+}
+ /* header es hermano de div*/
+nav {
+    background-color: #333;
+}
+
+ul {
+    padding: 20px;
+}
+
+ul  li {
+    display: inline;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+div {
+    position: relative;
+    top: 100px;
+}
+
+#nosotros {
+    height: 100vh;
+    background-color: aquamarine; 
+}

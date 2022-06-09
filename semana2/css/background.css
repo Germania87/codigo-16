@@ -1,0 +1,31 @@
+body {
+    font-family: Verdana;
+}
+
+.bg {
+    border: solid;
+    height: 300px;
+}
+
+.color-red {
+    background-color: red;
+}
+
+.color-green {
+    background-color: green;
+}
+
+.bg-img {
+    background: url("../../semana1/images/logodegoogle.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+
+.bg-img-olas {
+    background: url("../imagen/olas\ de\ colores.jpg");
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;  
+}

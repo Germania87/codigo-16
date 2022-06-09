@@ -1,0 +1,104 @@
+/* Usare un selector de etiqueta (tag) */
+html {
+    font-size: 13px;
+}
+
+body {
+    margin-left: 40px; /* margen o espacio*/
+    margin-right: 40px;
+    font-size: 20px;
+}
+
+h1 {
+    /*font-size: 2em;  2 x 20px (body - padre) = 40px cambios generales en el tiempo y viendo los elemento padre*/
+    font-size: 3rem; /* 2 x 10px (html: raiz)*/
+}
+    /* la unidad rem significa «el tamaño de letra del elemento raíz" */
+
+
+p {
+    text-align: center; /*alinea el texto*/
+    font-weight: bold;
+    font-size: 1.5em; /* 1.5 x 20 = 30px */
+}
+ 
+/* Responsive Web Design o diseño Web Adaptativo, el Diseño Web Adaptativo es aquel capaz de adaptarse a diferentes tamaños y dispositivos,
+es decir, dependiendo de qué dispositivo sea en el que se cargue, tu sitio web se verá más accesible y fácil de usar.
+ diseño responsivo = se adapta al diseño y distribucion que responde a las diferentes pantallas */ 
+
+.small { /* por tamaños y relativo em (padre inmediato) y rem (root)*/
+    font-size: 0.6em; /* 0.6 x 20px = 12px */
+}
+
+/* La unidad em tiene como referencia de medida el font-size del elemento actual. La unidad rem tiene como referencia de medida el font-size del 
+elemento root. la etiqueta <html>(en inglés sería como "root em"  a sabes que em y rem son dos unidades de CSS relativas. En concreto son relativas al font-size existente.
+ Sin embargo, mientras que em tiene referencia el tamaño de la fuente del elemento donde se usa esa unidad, rem tiene referencia al tamaño de la fuente definido en el elemento root*/ 
+
+/* si un elemento tiene aplicado un tamaño de fuente de 16 pixeles, entonces 1 em será igual a 16px (los navegadores de manera predeterminada definen un font-size de 16px al elemento HTML, por lo tanto,
+ por defecto 1em es igual a 16px). La unidad em es escalable y siempre depende de su elemento padre */
+
+/* Desde aqui quiero usar un selector de clase */ 
+.solid {
+    border-style:solid;
+    border-color: blue;
+    border-width: 8px;
+    border-radius: 10px;
+}
+
+.dashed {
+    border-style:dashed;
+    border-color: aqua;
+    border-width: 10px;
+}
+
+.dotted {
+    border: dotted red 3px; 
+}
+/* border: abrevia 3 propiedades en una */
+/* los 3 valores van en cualquier orden*/ 
+
+.left_solid {
+    border-left: solid violet 10px;
+}
+
+.groove {
+    border-style:groove;
+    border-color: green;
+    border-width: 35px;
+    font-size: 28px;
+    font-weight: bold;
+}
+    
+.double {
+    border-style:double;
+    border-color: orange;
+    border-width: 20px;
+}
+.hidden {
+    border-style:hidden;
+    border-color: yellow;
+    border-width: 25px;
+}
+
+#bnuevo:hover {
+    color:blue;
+    border-style: hidden;
+}
+ 
+.right-dotted {
+    border-right: dotted pink 3px;
+}
+
+.top-dashed {
+    border-top: dashed 2px gray;
+}
+
+.bottom-double {
+    border-bottom: double 5px rgb(12, 17, 1);
+}
+
+.mix-left-top {
+    border-style: solid dotted solid dotted;
+    border-width: 4px 8px;
+    border-color: black red blue;
+}

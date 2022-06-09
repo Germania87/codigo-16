@@ -1,4 +1,4 @@
- /* selector de tipo */
+ /* selector de tipo 
 h1 {
     color: purple;
     text-decoration: underline;
@@ -13,21 +13,25 @@ p {
     font-size: 45px;
 }
 
-/*selector id */ 
+selector id 
 #cabecera1 {
     color: red;
 }
 
-/* selector de class */
+ selector de class 
 .parrafos_rojos {
     color: red !important;
     font-weight: 600;
 }
 
-/*selector universal (todos los elementos) */
+/*selector universal (todos los elementos) 
 * {
     color: green; 
     font-size: 12px;
+} */
+
+.parrafo {
+    font-family: 'Dancing Script', monospace;
+    font-size: 100px;
+    font-weight: bolder;   
 }
-
-
