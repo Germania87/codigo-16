@@ -20,6 +20,7 @@ h1 {
 */ 
 
 .parrafo {
+    background-color: slateblue;
     font-family: 'Dancing Script', monospace;
     /* font-size: sirve para poder manejar el tamaño del texto */
     font-size: 100px;

@@ -1,0 +1,66 @@
+body {
+    background-color: rgb(190, 190, 190);
+}
+
+#contenedor {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient( to right, yellow 20%, red, blue 80%); 
+    margin: auto;
+}
+
+#contenedor:hover {
+    /* hover reservado a que el mouse pase por encima */
+    background: linear-gradient(to top, red 33%, white 33%, white 66%, red 66%); 
+    box-shadow: none;
+}
+
+h1:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    border: 1px black solid;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#circulo {
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(red , white , red );
+    margin: 60px auto;
+    border-radius: 100px;
+    filter: blur(10px) opacity(0.45);
+}
+
+#circulo:hover {
+    background: none;
+    background-color: purple;
+    filter: none;
+}
+
+.sombra {
+    /* 1er parametro: eje x (default derecha) */
+    /* 2do parametro: eje y (default abajo)*/
+    /* 3er parametro: blur (difuminacion o degradado) */
+    /* 4to. parametro: spread (propagaciòn) */
+    /* 5to. parametro: color ()*/
+    box-shadow: 20px 20px 10px -10px black;
+}
+
+.sombra_texto {
+        /* 1er parametro: eje x (default derecha) */
+        /* 2do parametro: eje y (default abajo)*/
+        /* 3er parametro: blur (difuminacion o degradado) */
+        /* 4to parametro: color */
+    text-shadow: 10px 10px 5px yellow;
+}
+
+.bandera {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(to right, red 33%, white 33%, white 66%, red 66%);
+    margin: auto;
+    box-shadow: 20px 20px 10px -10px black;
+}
