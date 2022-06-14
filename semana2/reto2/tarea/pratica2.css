@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+.nav {
+    margin: 30px;
+    height: 10vh;
+}
+
+.logo {
+    float: left;
+    height: 10vh;
+}
+
+.logo img {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.list-menu {
+    float: right;
+}
+
+.list-menu ul li {
+    display: inline;
+    padding: 20px;
+    color: hsl(238, 22%, 44%);
+    font-weight: 400;
+}
+
+.container-welcome {
+    height: 90vh;
+    padding: 30px;
+    margin-top: 40px;
+ /*display: flex (ahorra codigos de abajo) */  
+}
+
+.container-welcome-left {
+    float: left;
+}
+
+.container-welcome-left h1 {
+    width: 50%;
+    font-weight: bold;
+}
+
+.container-welcome-left p {
+    width: 50%;
+}
+
+/* este filtro solo afecta a los inputs de tipo email (puede ser texto, submit, color, ect)*/
+input[type="email"] {  
+    padding: 10px;
+    width: 300px;
+}   
+
+button {
+    background-color: hsl(224, 93%, 58%);
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    width: 200px;
+}
+/* Dentro container-welcome-left tenemos 3 div y va a buscar al primer div */ 
+/* Sabemos que el primer div es el padre, por ende podemos usar first-child (seudoclase) */
+/* .container-welcome-left div:first-child {
+    border: solid red;
+} */
+
+.container-form div {
+    width: 50%;
+    height: 40px;
+}
+
+.container-form div:first-child {
+    float: left;
+}
+
+.container-form div:last-child {
+    float: right;
+}
+
+.container-welcome-right {
+    float: right;
+}
+
+.container-wave {
+    background: url("./bg-curve-desktop.svg");
+    height: 10vh;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    /* border:solid red;*/
+}
+
+.container-description {
+    height: 90vh;
+    background-color: #f8f8fe;
+    margin-top: -20px;
+}
+
+.container-description div {
+    padding: 60px;
+}
+.container-description div:first-child {
+    float:left;
+}
+
+.container-description div:first-child h2 {
+    font-size: 2.5em;
+}
+
+.container-description div:first-child p {
+    width: 70%;
+}
+
+a {
+    color:hsl(170, 45%, 43%);
+    padding-bottom: 5px;
+    border-bottom: solid 0.5px;
+    text-decoration: none;
+}
+
+.container-description-right {
+    float: right;
+}
+
+.card {
+    background-color: #fff;
+    width: 300 px;
+}
