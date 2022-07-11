@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+    background-color: whitesmoke;
+}
+
+h1 {
+    margin: 20px;
+    background-color: rgb(66, 66, 65);
+    color:white;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 30%;
+    border-color: white;
+}
+
+.card {
+    border-radius: 8px;
+    box-shadow: 5px 2px 15px 5px rgba(227, 228, 215, 0.94);
+    width: 20%;
+    margin: 20px;
+    font-size: 1em;
+}
+
+.title {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 30px;
+    background-color: white;
+    color: orangered
+}
+
+.container-photo {
+    text-align: center;
+
+}
+
+img {
+    padding: 10px;
+    height: 300px;
+    width: 100%;
+    object-fit: contain;
+    background-color: #fff;
+}
+
+.container-price {
+    display: flex;
+    justify-content: space-around;
+    background-color: orangered;
+    color: black;
+}
+
+.price {
+    text-decoration: line-through;
+}
+
+.sale-price {
+    background-color: orange;
+    text-transform: uppercase;
+    color: white;
+}
+
+.btn-buy {
+    border: none;
+    background-color:orange;
+    color: #fff;
+    padding: 10px;
+    margin: 10px;
+    width: 95%;
+    margin-top: 20px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+    .card {
+        width: 100%;
+    }
+}

@@ -1,9 +1,9 @@
 .container {
-    /* cundo usamos flex */
+    /* cundo usamos */
     display: flex;
     height: 100vh;
     border: solid 3px;
-    /* al activar flex estamos activando sus
+    /* al activar estamos activando sus
   propiedades */
 
     /* alinea los elementos de forma horizontal */
@@ -22,12 +22,12 @@
     justify-content: space-around;
 
     /* La propiedad que se encarga de alinear elementos de 
-  forma vertical en flex align-items */
+  forma vertical en align-items */
     /* Note: Se basa en la altura, si un elemento no tiene 
   altura no va a poder centrarlo */
     align-items: center;
 
-    /* flex tambien permite controlar la direccion de 
+    /* tambien permite controlar la direccion de 
   los elmentos */
     /* colum: ha transformado la direecion de los elementos 
   en columnas */

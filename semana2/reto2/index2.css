@@ -70,8 +70,8 @@ img {
 #content_email {
     /*  vertical-align: text-top; */
     position: absolute;
-    top: calc(40% - 10px);
-    left: calc(50% - 75px);
+    top: calc(40% - 140px);
+    left: calc(50% - 80px);
 }
 
 #content_extra {

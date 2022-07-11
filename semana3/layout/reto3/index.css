@@ -1,0 +1,381 @@
+/* paso 1 quitamos margenes a todos los elementos */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* Cuando hablamos de colores en un proyecto tenemos 3 nombres como base */
+    /* primary-color: Es el color principal de la web */
+    /* secondary-color */
+    /* dark-color: */
+    /* accent-color: #333 */
+
+    /* let nombreDePersona = "Juan Peres" */
+    /* let name = "Juan Perez" */
+
+    /* !Una regla del nombre de una variable es que esta nos diga el contenido*/
+
+    /* Colors */
+    --sunglow-color: #fecb01;
+    --orange-color: #ff4d00;
+    /* Si queremos cambiar el valor de un variable por complete hacemos un refactor */
+    --white-color: #f3fcfa;
+    --brown-sugar-color: #b26244;
+    --polished-color: #63a496;
+    --capri-color: #3ebdfc;
+    --gray-color: #bab8ad;
+    /* Fonts */
+    /* ojo: Recuerden que las variables solo guardan un valor */
+    --font-fraunces: "Fraunces", sans-serif;
+    --font-barlow: "Barlow", sans-serif;
+}
+
+header {
+    background-color: var(--capri-color);
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+ul>li {
+    margin: 10px;
+}
+
+/* Nota cuando un elemento es un hijo directo como buena practica usamos el simbolo > */
+ul>li a {
+    font-family: var(--font-barlow);
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+.contact {
+    font-family: var(--font-fraunces);
+    background-color: var(--white-color);
+    color: #000;
+    padding: 15px;
+    border-radius: 25px;
+}
+
+.bg-orange {
+    height: 40vh;
+    background: url("./images/desktop/image-header.jpg");
+    background-color: var(--capri-color);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    color: var(--white-color);
+    font-family: var(--font-fraunces);
+    font-size: 3em;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    padding: 30px; 
+}
+
+.second-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.second-container div {
+    height: 60vh;
+    width: 50%;
+}
+
+.bg-egg {
+    background: url("./images/desktop/image-transform.jpg");
+}
+
+.bg-cup {
+    background: url("./images/desktop/image-stand-out.jpg");
+}
+
+.bg-cherry {
+    background: url("./images/desktop/image-graphic-design.jpg");
+}
+
+.bg-orange-complete {
+    background: url("./images/desktop/image-photography.jpg");
+}
+
+.child {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+section {
+    height: 105%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+}
+
+section h4 {
+    font-family: var(--font-fraunces);
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+section p {
+    font-family: var(--font-barlow);
+    font-weight: 200;
+    color: var(--gray-color);
+    margin-bottom: 30px;
+}
+
+section a {
+    font-family: var(--font-fraunces);
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+section a:hover {
+    box-shadow: 0 4px 6px -6px var(--sunglow-color);
+    width: 115px;
+}
+
+.bottom {
+    justify-content: flex-end;
+}
+
+.bottom h4 {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.bottom p {
+    color: #000;
+}
+
+/* Testimonial */
+
+.thirth-container {
+    height: 100vh;
+    background-color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.thirth-container h2 {
+    font-family: var(--font-fraunces);
+    color: var(--gray-color);
+    letter-spacing: 5px;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.thirth-container>div {
+    display: flex;
+}
+
+.testimonial {
+    padding: 20px;
+    text-align: center;
+}
+
+.testimonial img {
+    width: 75px;
+    border-radius: 50%;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.testimonial p {
+    font-family: var(--font-barlow);
+    font-size: 18px;
+    font-weight: 100;
+    width: 350px;
+    color: rgb(117, 117, 117);
+    line-height: 30px;
+    margin-bottom: 50px;
+}
+
+.testimonial span {
+    font-family: var(--font-fraunces);
+    font-size: 18px;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.testimonial i {
+    font-family: var(--font-barlow);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 100;
+    color: var(--gray-color);
+}
+
+/* Footer images */
+
+.fourth-container {
+    display: flex;
+    height: 60vh;
+}
+
+.bottles {
+    background: url(./images/desktop/image-gallery-milkbottles.jpg);
+}
+
+.orange {
+    background: url(./images/desktop/image-gallery-orange.jpg);
+}
+
+.cone {
+    background: url(./images/desktop/image-gallery-cone.jpg);
+}
+
+.sugar {
+    background: url(./images/desktop/image-gallery-sugarcubes.jpg);
+}
+
+.child2 {
+    width: 25%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--polished-color);
+    height: 50vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer>img {
+    width: 175px;
+    filter: sepia(46%) brightness(60%) hue-rotate(240deg) saturate(618%) invert(93%);
+    align-self: center;
+}
+
+footer div {
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    font-family: var(--font-barlow);
+    font-size: 18px;
+    font-weight: 100;
+    color: rgb(61, 137, 122);
+    margin: 20px;
+}
+
+.social {
+    margin-top: 20px;
+}
+
+/* ------------------------------------------------ Responsive ---------------------------------------------------- */
+
+@media only screen and (max-width: 720px) {
+
+    /* Menú */
+
+    nav ul {
+        display: none;
+    }
+
+    .ham {
+        display: block;
+    }
+
+    /* Main */
+
+    .title {
+        color: var(--white-color);
+        font-size: 3em;
+        text-align: center;
+    }
+
+    .second-container {
+        flex-direction: column;
+    }
+
+    .second-container div {
+        width: 100%;
+        flex: auto;
+    }
+
+    .child:first-child {
+        order: 2;
+    }
+
+    .child:nth-child(2) {
+        order: 1;
+    }
+
+    .child:nth-child(3) {
+        order: 3;
+    }
+
+    .child:nth-child(4) {
+        order: 4;
+    }
+
+    .child:nth-child(5) {
+        order: 5;
+    }
+
+    .child:nth-child(6) {
+        order: 6;
+    }
+
+    /* Container 3 Testimonials */
+
+    .thirth-container {
+        height: 100%;
+    }
+
+    .thirth-container>div {
+        display: block;
+        margin-bottom: 80px;
+    }
+
+    .thirth-container h2 {
+        margin-top: 40px;
+    }
+
+    /* Footer Images */
+
+    .fourth-container {
+        flex-wrap: wrap;
+        height: 100vw;
+    }
+
+    .fourth-container div {
+        width: 50%;
+    }
+}
+
+
